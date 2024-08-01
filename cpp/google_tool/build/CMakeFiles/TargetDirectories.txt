@@ -1,0 +1,3 @@
+/home/jason/Code/cpp/google_tool/build/CMakeFiles/google_tool.dir
+/home/jason/Code/cpp/google_tool/build/CMakeFiles/edit_cache.dir
+/home/jason/Code/cpp/google_tool/build/CMakeFiles/rebuild_cache.dir
