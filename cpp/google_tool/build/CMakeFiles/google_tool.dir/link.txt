@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -O3 -DNDEBUG -rdynamic CMakeFiles/google_tool.dir/src/main.cpp.o -o ../bin/google_tool  -Wl,-rpath,/usr/local/lib /usr/local/lib/libglog.so.0.7.0 /usr/local/lib/libgflags.a -lpthread 
