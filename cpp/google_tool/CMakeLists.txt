@@ -34,8 +34,8 @@ target_link_libraries(${PROJECT_NAME}
 
 ############################### TESTS ##########################################
 ### Add testing
-option(BUILD_DGP_TESTS "Build tests" ON)
-if (BUILD_DGP_TESTS)
+option(BUILD_TESTS "Build tests" ON)
+if (BUILD_TESTS)
 
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/gtest.cmake googletest-download/CMakeLists.txt)
     execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
@@ -84,5 +84,8 @@ if (BUILD_DGP_TESTS)
             NAME test_all_example
             COMMAND ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/unit_tests
     )
-endif (BUILD_DGP_TESTS)
+    add_executable(test_example2 test/test_example2.cpp)
+    target_link_libraries(test_example2 gtest_main ${PROJECT_NAME})
+    
+endif (BUILD_TESTS)
 
